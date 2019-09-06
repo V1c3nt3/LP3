@@ -30,7 +30,7 @@ app.use(bodyParser.json());
  * Registra as rotas relacionadas
  * a listas
  */
-app.use('/contatoRota', rotasContatos);
+app.use('/contatoRota', require('./routes/contatoRota'));
 
 
 module.exports = app;
